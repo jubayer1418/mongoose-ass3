@@ -10,4 +10,3 @@ var Genre;
     Genre["BIOGRAPHY"] = "BIOGRAPHY";
     Genre["FANTASY"] = "FANTASY";
 })(Genre || (exports.Genre = Genre = {}));
-//# sourceMappingURL=book.interface.js.map
