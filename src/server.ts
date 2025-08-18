@@ -1,12 +1,13 @@
 import mongoose from "mongoose";
 import app from "./app";
-import config from "./config";
 
 async function main() {
   try {
-    await mongoose.connect(config.database as string);
-    app.listen(config.port, () => {
-      console.log(`Example app listening on port ${config.port}`);
+    await mongoose.connect(
+      "mongodb+srv://mongoose-ass3:mongoose1234@cluster0.dxmnpk6.mongodb.net/mongoose-ass3?retryWrites=true&w=majority&appName=Cluster0"
+    );
+    app.listen(5000, () => {
+      console.log(`Example app listening on port ${5000}`);
     });
   } catch (error) {
     console.log(error);

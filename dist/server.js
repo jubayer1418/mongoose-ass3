@@ -14,13 +14,12 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const mongoose_1 = __importDefault(require("mongoose"));
 const app_1 = __importDefault(require("./app"));
-const config_1 = __importDefault(require("./config"));
 function main() {
     return __awaiter(this, void 0, void 0, function* () {
         try {
-            yield mongoose_1.default.connect(config_1.default.database);
-            app_1.default.listen(config_1.default.port, () => {
-                console.log(`Example app listening on port ${config_1.default.port}`);
+            yield mongoose_1.default.connect("mongodb+srv://mongoose-ass3:mongoose1234@cluster0.dxmnpk6.mongodb.net/mongoose-ass3?retryWrites=true&w=majority&appName=Cluster0");
+            app_1.default.listen(5000, () => {
+                console.log(`Example app listening on port ${5000}`);
             });
         }
         catch (error) {
