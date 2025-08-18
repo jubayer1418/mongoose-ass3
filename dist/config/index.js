@@ -7,7 +7,7 @@ const dotenv_1 = __importDefault(require("dotenv"));
 const path_1 = __importDefault(require("path"));
 dotenv_1.default.config({ path: path_1.default.join(process.cwd(), ".env") });
 exports.default = {
-    env: process.env.NODE_ENV,
+    nodeEnv: process.env.NODE_ENV,
     database: process.env.DATABASE_URL,
     port: process.env.PORT,
 };

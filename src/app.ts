@@ -17,4 +17,5 @@ app.get("/", (req: Request, res: Response) => {
 });
 
 app.use(errorHandler);
+
 export default app;
